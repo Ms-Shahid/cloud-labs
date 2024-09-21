@@ -11,7 +11,7 @@
 
 ### Architecture overview
 
-![High Level Architecture](resoruces/AWS Lambda Layers.png)
+![High Level Architecture](https://github.com/Ms-Shahid/cloud-labs/blob/master/resoruces/AWS%20Lambda%20Layers.png)
 
 
 ### Getting started 
@@ -144,7 +144,7 @@ Let’s consider a scenario where our objective is to perform sentiment analysis
 
 In this task, we’ll create a Lambda layer with the textblob library to perform sentiment analysis on quotes text. This approach helps separate core function logic from dependencies, allowing us to independently update the Lambda function code and dependencies. We’ll use the two features of the textblob library: Polarity and Subjectivity. After the completion of this task, the provisioned infrastructure would be similar to the one shown in the figure below:
 
-![lambda-layer](resoruces/lambda-layer.png)
+![lambda-layer](https://github.com/Ms-Shahid/cloud-labs/blob/master/resoruces/lambda-layer.png)
 
 
 Execute the following commands in the terminal of the code playground above:

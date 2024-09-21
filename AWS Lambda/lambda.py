@@ -1,8 +1,8 @@
 import requests
 
 def lambda_handler(event, context):
-    api_endpoint = 'https://9z1erdqrm3.execute-api.us-east-1.amazonaws.com/Prod'
-    api_key = 'ug5JiSYZJg27xvdt3YGuZ9NotvqwRmj5Dwa1lSb7'
+    api_endpoint = '<END_POINTt>'
+    api_key = '<API_KEY>'
 
     try:
         header_parameters = {

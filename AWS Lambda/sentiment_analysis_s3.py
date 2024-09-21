@@ -28,8 +28,6 @@ def lambda_handler(event, context):
 
     key = 'sample.png'
 
-
-
     try:
 
         # Start Textract job
@@ -56,8 +54,6 @@ def lambda_handler(event, context):
 
             time.sleep(5)
 
-
-
         # Process Textract result
 
         if result['JobStatus'] == 'SUCCEEDED':
@@ -72,8 +68,6 @@ def lambda_handler(event, context):
 
             raise Exception("Textract job failed")
 
-
-
         # Read image from S3 and encode as base64 for data URI
 
         image_object = s3.get_object(Bucket=bucket_name, Key=key)
@@ -82,15 +76,11 @@ def lambda_handler(event, context):
 
         image_data_uri = f"data:image/png;base64,{base64.b64encode(image_content).decode()}"
 
-
-
         # Read HTML content
 
         with open('template.html', 'r') as file:
 
             html_template = file.read()
-
-
 
         html_content = html_template.format(
 
@@ -103,8 +93,6 @@ def lambda_handler(event, context):
             subjectivity=sentiment.subjectivity
 
         )
-
-
 
         return {
 

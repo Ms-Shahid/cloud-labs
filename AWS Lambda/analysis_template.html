@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Text Analysis Result</title>
+
+    <style>
+
+        body {{ font-family: Arial, sans-serif; text-align: center; }}
+
+        .container {{ width: 80%; margin: auto; }}
+
+        img {{ max-width: 100%; height: auto; border: 3px solid #000;}}
+
+        .result {{ margin-top: 20px; }}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Text Analysis Result</h1>
+
+        <div><img src="{image_data_uri}" alt="Image" style="max-width: 100%; height: auto;"></div>
+
+        <div class="result">
+
+            <h2>Extracted Text</h2>
+
+            <p>{extracted_text}</p>
+
+        </div>
+
+        <div class="result">
+
+            <h2>Sentiment Analysis</h2>
+
+            <p>Polarity: {polarity:.2f}</p>
+
+            <p>Subjectivity: {subjectivity:.2f}</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+

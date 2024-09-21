@@ -30,8 +30,8 @@ with lambda layer, we can easily store them into seperate layer, instead of repl
 
 Lambda functions keep additional components separate from the main function code by utilizing Lambda layers, ensuring a more organized and modular structure.
 
-invoke url : https://9z1erdqrm3.execute-api.us-east-1.amazonaws.com/Prod
-API key : ug5JiSYZJg27xvdt3YGuZ9NotvqwRmj5Dwa1lSb7
+invoke url : 
+API key : 
 
 ### Triggering the lambda call via AWS cli
 
